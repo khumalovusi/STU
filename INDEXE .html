@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduNest Accommodations offers affordable and NSFAS-accredited housing near UFS and CUT campuses. Book now to secure your spot with discounts and exciting freebies!">
+    <title>EduNest Accommodations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2a6dbf;
+        }
+        .header {
+            background-color: #2a6dbf;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .accommodation-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .accommodation-card {
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+        }
+        .accommodation-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .accommodation-card h3 {
+            margin: 10px 0;
+        }
+        .accommodation-card p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .accommodation-card button {
+            background-color: #2a6dbf;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .accommodation-card button:hover {
+            background-color: #1d4f96;
+        }
+        .payment-section {
+            background-color: #e9f5ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #2a6dbf;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .accommodation-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to EduNest Accommodations</h1>
+        <p>Your home away from home! Secure your NSFAS-accredited room near UFS and CUT today.</p>
+    </div>
+
+    <p style="text-align: center; font-size: 18px; color: red;"><strong>🔥 Special Offer: Pay before January to get 25% off and a FREE microwave! 🔥</strong></p>
+    
+    <div class="accommodation-container">
+        <!-- Accommodation 1 -->
+        <div class="accommodation-card">
+            <img src="https://via.placeholder.com/300" alt="Shared Room - Mixed Gender">
+            <h3>Shared Room - Mixed Gender</h3>
+            <p>10-minute walking distance to campus.</p>
+            <p>Price: R3500 per month</p>
+            <button onclick="window.location.href='#payment'">Select & Pay</button>
+        </div>
+
+        <!-- Accommodation 2 -->
+        <div class="accommodation-card">
+            <img src="https://via.placeholder.com/300" alt="Single Room - Mixed Gender">
+            <h3>Single Room - Mixed Gender</h3>
+            <p>10-minute walking distance to campus.</p>
+            <p>Price: R4000 per month</p>
+            <button onclick="window.location.href='#payment'">Select & Pay</button>
+        </div>
+
+        <!-- Accommodation 3 -->
+        <div class="accommodation-card">
+            <img src="https://via.placeholder.com/300" alt="Shared Room - Mixed Gender">
+            <h3>Shared Room - Mixed Gender</h3>
+            <p>10-minute walking distance to campus.</p>
+            <p>Price: R3500 per month</p>
+            <button onclick="window.location.href='#payment'">Select & Pay</button>
+        </div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="payment-section" id="payment">
+        <h2>Secure Your Spot Now</h2>
+        <p><strong>NSFAS-accredited and approved by UFS and CUT!</strong> Choose EduNest for comfort, convenience, and affordability.</p>
+        <p><strong>Special Offer:</strong> Pay before January and get a <span style="color: red;">25% discount</span> AND a <span style="color: red;">FREE microwave</span> for your room!</p>
+        <p>Make a minimum deposit of <strong>R500</strong> to secure your spot. Full payment is due by the semester start.</p>
+        <p><strong>Bank Details:</strong></p>
+        <p><strong>Account Number:</strong> 4112 347473</p>
+        <p><strong>Branch Code:</strong> 632005 (ABSA)</p>
+
+        <p>Upload your proof of payment below:</p>
+        <form action="YOUR_SERVER_SIDE_SCRIPT" method="post" enctype="multipart/form-data" class="file-upload-form">
+            <label for="proof">Choose proof of payment file (e.g., screenshot or PDF):</label>
+            <input type="file" id="proof" name="proof" accept="image/*, application/pdf" required><br><br>
+            <input type="submit" value="Upload Proof">
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 EduNest Accommodations. All rights reserved.</p>
+        <p>Contact us: 073 570 5055 | <a href="mailto:khumalovusimuzi121@gmail.com" style="color: white;">khumalovusimuzi121@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
